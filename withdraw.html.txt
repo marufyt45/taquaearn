@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Withdraw Request - Taqua Earn</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #5f2eea, #3b82f6);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      max-width: 500px;
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      background: #10b981;
+      color: white;
+      padding: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #059669;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Withdraw Request</h1>
+  </div>
+
+  <div class="container">
+    <h2>Withdraw Your Balance</h2>
+    <form>
+      <label for="method">Payment Method</label>
+      <select id="method" required>
+        <option value="">Select</option>
+        <option value="bkash">Bkash</option>
+        <option value="nagad">Nagad</option>
+        <option value="rocket">Rocket</option>
+      </select>
+
+      <label for="number">Payment Number</label>
+      <input type="text" id="number" placeholder="01XXXXXXXXX" required />
+
+      <label for="amount">Amount (৳)</label>
+      <input type="number" id="amount" placeholder="Minimum ৳200" required />
+
+      <button class="btn" type="submit">Submit Request</button>
+    </form>
+
+    <div class="note">
+      📌 Note: You must have 2 active referrals and ৳200+ to withdraw.
+    </div>
+  </div>
+
+</body>
+</html>
